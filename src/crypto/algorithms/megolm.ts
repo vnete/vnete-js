@@ -989,7 +989,7 @@ class MegolmEncryption extends EncryptionAlgorithm {
         if (this.encryptionPreparation) {
             // We're already preparing something, so don't do anything else.
             // FIXME: check if we need to restart
-            // (https://github.com/matrix-org/matrix-js-sdk/issues/1255)
+            // (https://github.com/vnete/vnete-js/issues/1255)
             const elapsedTime = Date.now() - this.encryptionPreparationMetadata.startTime;
             logger.debug(
                 `Already started preparing to encrypt for ${this.roomId} ` +
@@ -1043,7 +1043,7 @@ class MegolmEncryption extends EncryptionAlgorithm {
         if (this.encryptionPreparation) {
             // If we started sending keys, wait for it to be done.
             // FIXME: check if we need to cancel
-            // (https://github.com/matrix-org/matrix-js-sdk/issues/1255)
+            // (https://github.com/vnete/vnete-js/issues/1255)
             try {
                 await this.encryptionPreparation;
             } catch (e) {
@@ -1176,7 +1176,7 @@ class MegolmEncryption extends EncryptionAlgorithm {
         // with them, which means that they will have announced any new devices via
         // device_lists in their /sync response.  This cache should then be maintained
         // using all the device_lists changes and left fields.
-        // See https://github.com/vector-im/element-web/issues/2305 for details.
+        // See https://github.com/vnete/vnete-chat/issues/2305 for details.
         const devices = await this.crypto.downloadKeys(roomMembers, false);
         const blocked: IBlockedMap = {};
         // remove any blocked devices
@@ -1257,7 +1257,7 @@ class MegolmDecryption extends DecryptionAlgorithm {
         //
         // then, if the key turns up while decryption is in progress (and
         // decryption fails), we will schedule a retry.
-        // (fixes https://github.com/vector-im/element-web/issues/5001)
+        // (fixes https://github.com/vnete/vnete-chat/issues/5001)
         this.addEventToPendingList(event);
 
         let res;

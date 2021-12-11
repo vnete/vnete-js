@@ -2936,7 +2936,7 @@ export class Crypto extends EventEmitter {
         // we don't start uploading one-time keys until we've caught up with
         // to-device messages, to help us avoid throwing away one-time-keys that we
         // are about to receive messages for
-        // (https://github.com/vector-im/element-web/issues/2782).
+        // (https://github.com/vnete/vnete-chat/issues/2782).
         if (!syncData.catchingUp) {
             this.maybeUploadOneTimeKeys();
             this.processReceivedRoomKeyRequests();

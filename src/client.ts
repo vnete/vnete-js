@@ -219,7 +219,7 @@ export interface ICreateClientOpts {
 
     /**
      * Identity server provider to retrieve the user's access token when accessing
-     * the identity server. See also https://github.com/vector-im/element-web/issues/10615
+     * the identity server. See also https://github.com/vnete/vnete-chat/issues/10615
      * which seeks to replace the previous approach of manual access tokens params
      * with this callback throughout the SDK.
      */
@@ -650,7 +650,7 @@ export interface IInstance {
     icon?: string;
     fields: object;
     network_id: string;
-    // XXX: this is undocumented but we rely on it: https://github.com/matrix-org/matrix-doc/issues/3203
+    // XXX: this is undocumented but we rely on it: https://github.com/vnete/vnete-doc/issues/3203
     instance_id: string;
 }
 
@@ -751,7 +751,7 @@ export class MatrixClient extends EventEmitter {
     protected pushProcessor = new PushProcessor(this);
 
     // Promise to a response of the server's /versions response
-    // TODO: This should expire: https://github.com/matrix-org/matrix-js-sdk/issues/1020
+    // TODO: This should expire: https://github.com/vnete/vnete-js/issues/1020
     protected serverVersionsPromise: Promise<IServerVersions>;
 
     protected cachedCapabilities: {
@@ -888,7 +888,7 @@ export class MatrixClient extends EventEmitter {
                 ? !!actions.tweaks.highlight : false;
             if (oldHighlight !== newHighlight || currentCount > 0) {
                 // TODO: Handle mentions received while the client is offline
-                // See also https://github.com/vector-im/element-web/issues/9069
+                // See also https://github.com/vnete/vnete-chat/issues/9069
                 if (!room.hasUserReadEvent(this.getUserId(), event.getId())) {
                     let newCount = currentCount;
                     if (newHighlight && !oldHighlight) newCount++;
@@ -906,7 +906,7 @@ export class MatrixClient extends EventEmitter {
 
         // Like above, we have to listen for read receipts from ourselves in order to
         // correctly handle notification counts on encrypted rooms.
-        // This fixes https://github.com/vector-im/element-web/issues/9421
+        // This fixes https://github.com/vnete/vnete-chat/issues/9421
         this.on("Room.receipt", (event, room) => {
             if (room && this.isRoomEncrypted(room.roomId)) {
                 // Figure out if we've read something or if it's just informational
@@ -3610,7 +3610,7 @@ export class MatrixClient extends EventEmitter {
             //   * prevents server-side bundling for reactions
             // The reaction key / content / emoji value does warrant encrypting, but
             // this will be handled separately by encrypting just this value.
-            // See https://github.com/matrix-org/matrix-doc/pull/1849#pullrequestreview-248763642
+            // See https://github.com/vnete/vnete-doc/pull/1849#pullrequestreview-248763642
             return null;
         }
 
@@ -8457,7 +8457,7 @@ export class MatrixClient extends EventEmitter {
     }
 
     // TODO: Remove this warning, alongside the functions
-    // See https://github.com/vector-im/element-web/issues/17532
+    // See https://github.com/vnete/vnete-chat/issues/17532
     // ======================================================
     // **                ANCIENT APIS BELOW                **
     // ======================================================
@@ -8827,7 +8827,7 @@ export class MatrixClient extends EventEmitter {
 
     /**
      * Fetches the summary of a room as defined by an initial version of MSC3266 and implemented in Synapse
-     * Proposed at https://github.com/matrix-org/matrix-doc/pull/3266
+     * Proposed at https://github.com/vnete/vnete-doc/pull/3266
      * @param {string} roomIdOrAlias The ID or alias of the room to get the summary of.
      * @param {string[]?} via The list of servers which know about the room if only an ID was provided.
      */

@@ -344,7 +344,7 @@ describe("megolm", function() {
     });
 
     it("Alice receives a megolm message before the session keys", function() {
-        // https://github.com/vector-im/element-web/issues/2273
+        // https://github.com/vnete/vnete-chat/issues/2273
         let roomKeyEncrypted;
 
         return aliceTestClient.start().then(() => {
@@ -725,7 +725,7 @@ describe("megolm", function() {
         });
     });
 
-    // https://github.com/vector-im/element-web/issues/2676
+    // https://github.com/vnete/vnete-chat/issues/2676
     it("Alice should send to her other devices", function() {
         // for this test, we make the testOlmAccount be another of Alice's devices.
         // it ought to get included in messages Alice sends.

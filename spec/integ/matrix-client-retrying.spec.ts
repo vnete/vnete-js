@@ -62,7 +62,7 @@ describe("MatrixClient retrying", function() {
 
         // XXX: it turns out that the promise returned by this message
         // never gets resolved.
-        // https://github.com/matrix-org/matrix-js-sdk/issues/496
+        // https://github.com/vnete/vnete-js/issues/496
         client.sendMessage(roomId, {
             "msgtype": "m.text",
             "body": "m2",

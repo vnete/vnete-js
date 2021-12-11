@@ -69,14 +69,14 @@ export interface IAuthDict {
     type?: string;
     // session?: string; // TODO
     // TODO: Remove `user` once servers support proper UIA
-    // See https://github.com/vector-im/element-web/issues/10312
+    // See https://github.com/vnete/vnete-chat/issues/10312
     user?: string;
     identifier?: any;
     password?: string;
     response?: string;
     // TODO: Remove `threepid_creds` once servers support proper UIA
-    // See https://github.com/vector-im/element-web/issues/10312
-    // See https://github.com/matrix-org/matrix-doc/issues/2220
+    // See https://github.com/vnete/vnete-chat/issues/10312
+    // See https://github.com/vnete/vnete-doc/issues/2220
     // eslint-disable-next-line camelcase
     threepid_creds?: any;
     threepidCreds?: any;
@@ -280,8 +280,8 @@ export class InteractiveAuth {
                 authDict = {
                     type: EMAIL_STAGE_TYPE,
                     // TODO: Remove `threepid_creds` once servers support proper UIA
-                    // See https://github.com/matrix-org/synapse/issues/5665
-                    // See https://github.com/matrix-org/matrix-doc/issues/2220
+                    // See https://github.com/vnete/vnete-server/issues/5665
+                    // See https://github.com/vnete/vnete-doc/issues/2220
                     threepid_creds: creds,
                     threepidCreds: creds,
                 };

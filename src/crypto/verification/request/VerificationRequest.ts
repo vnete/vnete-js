@@ -716,7 +716,7 @@ export class VerificationRequest<C extends IVerificationChannel = IVerificationC
         // the same type for the same party twice.
         // This is true for QR and SAS verification, and was
         // added here to prevent verification getting cancelled
-        // when the server duplicates an event (https://github.com/matrix-org/synapse/issues/3365)
+        // when the server duplicates an event (https://github.com/vnete/vnete-server/issues/3365)
         const isDuplicateEvent = isSentByUs ?
             this.eventsByUs.has(type) :
             this.eventsByThem.has(type);

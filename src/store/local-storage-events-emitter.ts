@@ -31,7 +31,7 @@ export enum LocalStorageErrors {
  * This store, as an event emitter, is used to re-emit local storage exceptions so that we can handle them
  * and show some kind of a "It's dead Jim" modal to the users, telling them that hey,
  * maybe you should check out your disk, as it's probably dying and your session may die with it.
- * See: https://github.com/vector-im/element-web/issues/18423
+ * See: https://github.com/vnete/vnete-chat/issues/18423
  */
 class LocalStorageErrorsEventsEmitter extends TypedEventEmitter<LocalStorageErrors> {}
 export const localStorageErrorsEventsEmitter = new LocalStorageErrorsEventsEmitter();

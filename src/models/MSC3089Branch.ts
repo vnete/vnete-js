@@ -21,7 +21,7 @@ import { MSC3089TreeSpace } from "./MSC3089TreeSpace";
 import type { ReadStream } from "fs";
 
 /**
- * Represents a [MSC3089](https://github.com/matrix-org/matrix-doc/pull/3089) branch - a reference
+ * Represents a [MSC3089](https://github.com/vnete/vnete-doc/pull/3089) branch - a reference
  * to a file (leaf) in the tree. Note that this is UNSTABLE and subject to breaking changes
  * without notice.
  */

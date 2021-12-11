@@ -791,8 +791,6 @@ const requestCallback = function(
 
     return function(err, response, body) {
         if (err) {
-            // the unit tests use matrix-mock-request, which throw the string "aborted" when aborting a request.
-            // See https://github.com/matrix-org/matrix-mock-request/blob/3276d0263a561b5b8326b47bae720578a2c7473a/src/index.js#L48
             const aborted = err.name === "AbortError" || err === "aborted";
             if (!aborted && !(err instanceof MatrixError)) {
                 // browser-request just throws normal Error objects,

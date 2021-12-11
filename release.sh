@@ -4,7 +4,7 @@
 #
 # Requires:
 #   github-changelog-generator; install via:
-#     pip install git+https://github.com/matrix-org/github-changelog-generator.git
+#     pip install git+https://github.com/vnete/github-changelog-generator.git
 #   jq; install from your distribution's package manager (https://stedolan.github.io/jq/)
 #   hub; install via brew (macOS) or source/pre-compiled binaries (debian) (https://github.com/github/hub) - Tested on v2.2.9
 #   npm; typically installed by Node.js

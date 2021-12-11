@@ -10,13 +10,13 @@ Quickstart
 In a browser
 ------------
 Download the browser version from
-https://github.com/matrix-org/matrix-js-sdk/releases/latest and add that as a
+https://github.com/vnete/vnete-js/releases/latest and add that as a
 ``<script>`` to your page. There will be a global variable ``matrixcs``
 attached to ``window`` through which you can access the SDK. See below for how to
 include libolm to enable end-to-end-encryption.
 
 The browser bundle supports recent versions of browsers. Typically this is ES2015
-or `> 0.5%, last 2 versions, Firefox ESR, not dead` if using 
+or `> 0.5%, last 2 versions, Firefox ESR, not dead` if using
 [browserlists](https://github.com/browserslist/browserslist).
 
 Please check [the working browser example](examples/browser) for more information.
@@ -30,7 +30,7 @@ This SDK targets Node 10 for compatibility, which translates to ES6. If you're u
 a bundler like webpack you'll likely have to transpile dependencies, including this
 SDK, to match your target browsers.
 
-Using `yarn` instead of `npm` is recommended. Please see the Yarn [install guide](https://classic.yarnpkg.com/en/docs/install) 
+Using `yarn` instead of `npm` is recommended. Please see the Yarn [install guide](https://classic.yarnpkg.com/en/docs/install)
 if you do not have it already.
 
 ``yarn add matrix-js-sdk``

@@ -121,28 +121,28 @@ export enum RoomType {
 }
 
 /**
- * Identifier for an [MSC3088](https://github.com/matrix-org/matrix-doc/pull/3088)
+ * Identifier for an [MSC3088](https://github.com/vnete/vnete-doc/pull/3088)
  * room purpose. Note that this reference is UNSTABLE and subject to breaking changes,
  * including its eventual removal.
  */
 export const UNSTABLE_MSC3088_PURPOSE = new UnstableValue("m.room.purpose", "org.matrix.msc3088.purpose");
 
 /**
- * Enabled flag for an [MSC3088](https://github.com/matrix-org/matrix-doc/pull/3088)
+ * Enabled flag for an [MSC3088](https://github.com/vnete/vnete-doc/pull/3088)
  * room purpose. Note that this reference is UNSTABLE and subject to breaking changes,
  * including its eventual removal.
  */
 export const UNSTABLE_MSC3088_ENABLED = new UnstableValue("m.enabled", "org.matrix.msc3088.enabled");
 
 /**
- * Subtype for an [MSC3089](https://github.com/matrix-org/matrix-doc/pull/3089) space-room.
+ * Subtype for an [MSC3089](https://github.com/vnete/vnete-doc/pull/3089) space-room.
  * Note that this reference is UNSTABLE and subject to breaking changes, including its
  * eventual removal.
  */
 export const UNSTABLE_MSC3089_TREE_SUBTYPE = new UnstableValue("m.data_tree", "org.matrix.msc3089.data_tree");
 
 /**
- * Leaf type for an event in a [MSC3089](https://github.com/matrix-org/matrix-doc/pull/3089) space-room.
+ * Leaf type for an event in a [MSC3089](https://github.com/vnete/vnete-doc/pull/3089) space-room.
  * Note that this reference is UNSTABLE and subject to breaking changes, including its
  * eventual removal.
  */
@@ -150,7 +150,7 @@ export const UNSTABLE_MSC3089_LEAF = new UnstableValue("m.leaf", "org.matrix.msc
 
 /**
  * Branch (Leaf Reference) type for the index approach in a
- * [MSC3089](https://github.com/matrix-org/matrix-doc/pull/3089) space-room. Note that this reference is
+ * [MSC3089](https://github.com/vnete/vnete-doc/pull/3089) space-room. Note that this reference is
  * UNSTABLE and subject to breaking changes, including its eventual removal.
  */
 export const UNSTABLE_MSC3089_BRANCH = new UnstableValue("m.branch", "org.matrix.msc3089.branch");

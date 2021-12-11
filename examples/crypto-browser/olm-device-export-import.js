@@ -21,7 +21,7 @@ window.newMatrixClient = async function (username) {
       null,
       { type: 'm.login.dummy' }
     );
-  
+
     const matrixClient = matrixcs.createClient({
       baseUrl: BASE_URL,
       userId: userRegisterResult.user_id,
@@ -77,7 +77,7 @@ function extendMatrixClient(matrixClient) {
             console.log(event);
         }
     });
-  
+
     matrixClient.createEncryptedRoom = async function(usersToInvite) {
         const {
           room_id: roomId,
@@ -88,7 +88,7 @@ function extendMatrixClient(matrixClient) {
 
         // matrixClient.setRoomEncryption() only updates local state
         // but does not send anything to the server
-        // (see https://github.com/matrix-org/matrix-js-sdk/issues/905)
+        // (see https://github.com/vnete/vnete-js/issues/905)
         // so we do it ourselves with 'sendStateEvent'
         await this.sendStateEvent(
           roomId, 'm.room.encryption', ROOM_CRYPTO_CONFIG,

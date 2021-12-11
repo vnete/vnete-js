@@ -259,7 +259,7 @@ export class BackupManager {
                 // uploaded to the new backup. This is a bit of a workaround to upload
                 // keys to a new backup in *most* cases, but it won't cover all cases
                 // because we don't remember what backup version we uploaded keys to:
-                // see https://github.com/vector-im/element-web/issues/14833
+                // see https://github.com/vnete/vnete-chat/issues/14833
                 await this.scheduleAllGroupSessionsForBackup();
             } else {
                 logger.log("Backup version " + backupInfo.version + " still current");

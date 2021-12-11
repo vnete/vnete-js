@@ -77,7 +77,7 @@ export enum TreePermissions {
 }
 
 /**
- * Represents a [MSC3089](https://github.com/matrix-org/matrix-doc/pull/3089)
+ * Represents a [MSC3089](https://github.com/vnete/vnete-doc/pull/3089)
  * file tree Space. Note that this is UNSTABLE and subject to breaking changes
  * without notice.
  */

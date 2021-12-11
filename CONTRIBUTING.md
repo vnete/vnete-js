@@ -47,7 +47,7 @@ To add a longer, more detailed description of the change for the changelog:
 _Fix llama herding bug_
 
 ```
-Notes: Fix a bug (https://github.com/matrix-org/notaproject/issues/123) where the 'Herd' button would not herd more than 8 Llamas if the moon was in the waxing gibbous phase
+Notes: Fix a bug (https://github.com/vnete/notaproject/issues/123) where the 'Herd' button would not herd more than 8 Llamas if the moon was in the waxing gibbous phase
 ```
 
 For some PRs, it's not useful to have an entry in the user-facing changelog (this is
@@ -128,7 +128,7 @@ general, avoid using `export default`.
 
 The remaining code-style for matrix-js-sdk is not formally documented, but
 contributors are encouraged to read the
-[code style document for matrix-react-sdk](https://github.com/matrix-org/matrix-react-sdk/blob/master/code_style.md)
+[code style document for matrix-react-sdk](https://github.com/vnete/vnete-react/blob/master/code_style.md)
 and follow the principles set out there.
 
 Please ensure your changes match the cosmetic style of the existing project,
