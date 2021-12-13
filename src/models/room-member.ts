@@ -58,7 +58,7 @@ export class RoomMember extends EventEmitter {
      * @prop {string} userId The user ID of this member.
      * @prop {boolean} typing True if the room member is currently typing.
      * @prop {string} name The human-readable name for this room member. This will be
-     * disambiguated with a suffix of " (@user_id:matrix.org)" if another member shares the
+     * disambiguated with a suffix of " (@user_id:vnete.net)" if another member shares the
      * same displayname.
      * @prop {string} rawDisplayName The ambiguous displayname of this room member.
      * @prop {Number} powerLevel The power level for this room member.

@@ -42,7 +42,7 @@ export function isRoomSharedHistory(room: Room): boolean {
     const visibilityEvent = room?.currentState?.getStateEvents("m.room.history_visibility", "");
     // NOTE: if the room visibility is unset, it would normally default to
     // "world_readable".
-    // (https://spec.matrix.org/unstable/client-server-api/#server-behaviour-5)
+    // (https://spec.vnete.net/unstable/client-server-api/#server-behaviour-5)
     // But we will be paranoid here, and treat it as a situation where the room
     // is not shared-history
     const visibility = visibilityEvent?.getContent()?.history_visibility;

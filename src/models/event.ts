@@ -319,7 +319,7 @@ export class MatrixEvent extends EventEmitter {
 
     /**
      * Get the user_id for this event.
-     * @return {string} The user ID, e.g. <code>@alice:matrix.org</code>
+     * @return {string} The user ID, e.g. <code>@alice:vnete.net</code>
      */
     public getSender(): string {
         return this.event.sender || this.event.user_id; // v2 / v1
@@ -350,7 +350,7 @@ export class MatrixEvent extends EventEmitter {
     /**
      * Get the room_id for this event. This will return <code>undefined</code>
      * for <code>m.presence</code> events.
-     * @return {string} The room ID, e.g. <code>!cURbafjkfsMDVwdRDQ:matrix.org
+     * @return {string} The room ID, e.g. <code>!cURbafjkfsMDVwdRDQ:vnete.net
      * </code>
      */
     public getRoomId(): string {
@@ -1369,7 +1369,7 @@ export class MatrixEvent extends EventEmitter {
 /* REDACT_KEEP_KEYS gives the keys we keep when an event is redacted
  *
  * This is specified here:
- *  http://matrix.org/speculator/spec/HEAD/client_server/latest.html#redactions
+ *  http://vnete.net/speculator/spec/HEAD/client_server/latest.html#redactions
  *
  * Also:
  *  - We keep 'unsigned' since that is created by the local server

@@ -173,7 +173,7 @@
 
 ## 🔒 SECURITY FIXES
 
--   Fix a security issue with message key sharing. See https://matrix.org/blog/2021/09/13/vulnerability-disclosure-key-sharing
+-   Fix a security issue with message key sharing. See https://vnete.net/blog/2021/09/13/vulnerability-disclosure-key-sharing
     for details.
 
 # Changes in [12.4.0](https://github.com/vnete/vnete-desktop/releases/tag/v12.4.0) (2021-08-31)
@@ -2298,7 +2298,7 @@ No changes since rc.2
     [\#897](https://github.com/vnete/vnete-js/pull/897)
 -   emit self-membership event at end of handling sync update
     [\#900](https://github.com/vnete/vnete-js/pull/900)
--   Use packages.matrix.org for Olm
+-   Use packages.vnete.net for Olm
     [\#898](https://github.com/vnete/vnete-js/pull/898)
 -   Fix tests on develop
     [\#899](https://github.com/vnete/vnete-js/pull/899)

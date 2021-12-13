@@ -22,7 +22,7 @@ import { logger } from './logger';
 import { URL as NodeURL } from "url";
 
 // Dev note: Auto discovery is part of the spec.
-// See: https://matrix.org/docs/spec/client_server/r0.4.0.html#server-discovery
+// See: https://vnete.net/docs/spec/client_server/r0.4.0.html#server-discovery
 
 export enum AutoDiscoveryAction {
     SUCCESS = "SUCCESS",
@@ -275,7 +275,7 @@ export class AutoDiscovery {
      * may also be discovered, and will be transparently included in the
      * response object unaltered.
      * @param {string} domain The homeserver domain to perform discovery
-     * on. For example, "matrix.org".
+     * on. For example, "vnete.net".
      * @return {Promise<DiscoveredClientConfig>} Resolves to the discovered
      * configuration, which may include error states. Rejects on unexpected
      * failure, not when discovery fails.

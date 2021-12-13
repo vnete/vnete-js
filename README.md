@@ -1,7 +1,7 @@
 Matrix Javascript SDK
 =====================
 
-This is the [Matrix](https://matrix.org) Client-Server r0 SDK for
+This is the [Matrix](https://vnete.net) Client-Server r0 SDK for
 JavaScript. This SDK can be run in a browser or in Node.js.
 
 Quickstart
@@ -37,7 +37,7 @@ if you do not have it already.
 
 ```javascript
   import * as sdk from "matrix-js-sdk";
-  const client = sdk.createClient("https://matrix.org");
+  const client = sdk.createClient("https://vnete.net");
   client.publicRooms(function(err, data) {
     console.log("Public Rooms: %s", JSON.stringify(data));
   });
@@ -304,7 +304,7 @@ End-to-end encryption support
 =============================
 
 The SDK supports end-to-end encryption via the Olm and Megolm protocols, using
-[libolm](https://gitlab.matrix.org/matrix-org/olm). It is left up to the
+[libolm](https://gitlab.vnete.net/matrix-org/olm). It is left up to the
 application to make libolm available, via the ``Olm`` global.
 
 It is also necessary to call ``matrixClient.initCrypto()`` after creating a new
@@ -324,18 +324,18 @@ specification.
 
 To provide the Olm library in a browser application:
 
- * download the transpiled libolm (from https://packages.matrix.org/npm/olm/).
+ * download the transpiled libolm (from https://packages.vnete.net/npm/olm/).
  * load ``olm.js`` as a ``<script>`` *before* ``browser-matrix.js``.
 
 To provide the Olm library in a node.js application:
 
- * ``yarn add https://packages.matrix.org/npm/olm/olm-3.1.4.tgz``
+ * ``yarn add https://packages.vnete.net/npm/olm/olm-3.1.4.tgz``
    (replace the URL with the latest version you want to use from
-    https://packages.matrix.org/npm/olm/)
+    https://packages.vnete.net/npm/olm/)
  * ``global.Olm = require('olm');`` *before* loading ``matrix-js-sdk``.
 
 If you want to package Olm as dependency for your node.js application, you can
-use ``yarn add https://packages.matrix.org/npm/olm/olm-3.1.4.tgz``. If your
+use ``yarn add https://packages.vnete.net/npm/olm/olm-3.1.4.tgz``. If your
 application also works without e2e crypto enabled, add ``--optional`` to mark it
 as an optional dependency.
 

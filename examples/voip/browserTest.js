@@ -1,5 +1,5 @@
 console.log("Loading browser sdk");
-var BASE_URL = "https://matrix.org";
+var BASE_URL = "https://vnete.net";
 var TOKEN = "accesstokengoeshere";
 var USER_ID = "@username:localhost";
 var ROOM_ID = "!room:id";

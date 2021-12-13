@@ -36,7 +36,7 @@ export enum EventType {
     /**
      * @deprecated Should not be used.
      */
-    RoomAliases = "m.room.aliases", // deprecated https://matrix.org/docs/spec/client_server/r0.6.1#historical-events
+    RoomAliases = "m.room.aliases", // deprecated https://vnete.net/docs/spec/client_server/r0.6.1#historical-events
 
     SpaceChild = "m.space.child",
     SpaceParent = "m.space.parent",
@@ -63,7 +63,7 @@ export enum EventType {
     KeyVerificationCancel = "m.key.verification.cancel",
     KeyVerificationMac = "m.key.verification.mac",
     KeyVerificationDone = "m.key.verification.done",
-    // use of this is discouraged https://matrix.org/docs/spec/client_server/r0.6.1#m-room-message-feedback
+    // use of this is discouraged https://vnete.net/docs/spec/client_server/r0.6.1#m-room-message-feedback
     RoomMessageFeedback = "m.room.message.feedback",
     Reaction = "m.reaction",
 

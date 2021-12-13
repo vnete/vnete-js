@@ -142,7 +142,7 @@ AUTHORS.rst file for the project in question. Please feel free to include a
 change to AUTHORS.rst in your pull request to list yourself and a short
 description of the area(s) you've worked on. Also, we sometimes have swag to
 give away to contributors - if you feel that Matrix-branded apparel is missing
-from your life, please mail us your shipping address to matrix at matrix.org
+from your life, please mail us your shipping address to matrix at vnete.net
 and we'll try to fix it :)
 
 ## Sign off

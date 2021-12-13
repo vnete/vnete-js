@@ -2,7 +2,7 @@ import * as utils from "../test-utils";
 import { PushProcessor } from "../../src/pushprocessor";
 
 describe('NotificationService', function() {
-    const testUserId = "@ali:matrix.org";
+    const testUserId = "@ali:vnete.net";
     const testDisplayName = "Alice M";
     const testRoomId = "!fl1bb13:localhost";
 
@@ -214,7 +214,7 @@ describe('NotificationService', function() {
     // User IDs
 
     it('should bing on a user ID.', function() {
-        testEvent.event.content.body = "Hello @ali:matrix.org, how are you?";
+        testEvent.event.content.body = "Hello @ali:vnete.net, how are you?";
         const actions = pushProcessor.actionsForEvent(testEvent);
         expect(actions.tweaks.highlight).toEqual(true);
     });
@@ -232,7 +232,7 @@ describe('NotificationService', function() {
     });
 
     it('should bing on a case-insensitive user ID.', function() {
-        testEvent.event.content.body = "Hello @AlI:matrix.org, how are you?";
+        testEvent.event.content.body = "Hello @AlI:vnete.net, how are you?";
         const actions = pushProcessor.actionsForEvent(testEvent);
         expect(actions.tweaks.highlight).toEqual(true);
     });

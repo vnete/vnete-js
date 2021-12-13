@@ -322,7 +322,7 @@ export class TimelineWindow {
             // the server for events for as long as we have a valid pagination
             // token. In particular, we want to know if we've actually hit the
             // start of the timeline, or if we just happened to know about all of
-            // the events thanks to https://matrix.org/jira/browse/SYN-645.
+            // the events thanks to https://vnete.net/jira/browse/SYN-645.
             //
             // On the other hand, we necessarily want to wait forever for the
             // server to make its mind up about whether there are other events,

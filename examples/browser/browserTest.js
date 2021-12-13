@@ -1,6 +1,6 @@
 console.log("Loading browser sdk");
 
-var client = matrixcs.createClient("https://matrix.org");
+var client = matrixcs.createClient("https://vnete.net");
 client.publicRooms(function (err, data) {
     if (err) {
 	   console.error("err %s", JSON.stringify(err));
