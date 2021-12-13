@@ -48,7 +48,7 @@ export class AutoDiscovery {
 
     public static readonly ERROR_INVALID_HS_BASE_URL = "Invalid base_url for m.homeserver";
 
-    public static readonly ERROR_INVALID_HOMESERVER = "Homeserver URL does not appear to be a valid Matrix homeserver";
+    public static readonly ERROR_INVALID_HOMESERVER = "Homeserver URL does not appear to be a valid Vnete homeserver";
 
     public static readonly ERROR_INVALID_IS_BASE_URL = "Invalid base_url for m.identity_server";
 
