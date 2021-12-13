@@ -8078,7 +8078,7 @@ export class MatrixClient extends EventEmitter {
     }
 
     /**
-     * Looks up the public Matrix ID mapping for a given 3rd party
+     * Looks up the public Vnete ID mapping for a given 3rd party
      * identifier from the identity server
      *
      * @param {string} medium The medium of the threepid, eg. 'email'
@@ -8127,7 +8127,7 @@ export class MatrixClient extends EventEmitter {
     }
 
     /**
-     * Looks up the public Matrix ID mappings for multiple 3PIDs.
+     * Looks up the public Vnete ID mappings for multiple 3PIDs.
      *
      * @param {Array.<Array.<string>>} query Array of arrays containing
      * [medium, address]

@@ -1,7 +1,7 @@
 Matrix Javascript SDK
 =====================
 
-This is the [Matrix](https://vnete.net) Client-Server r0 SDK for
+This is the [Vnete](https://vnete.net) Client-Server r0 SDK for
 JavaScript. This SDK can be run in a browser or in Node.js.
 
 Quickstart
