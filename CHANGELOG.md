@@ -1,4 +1,33 @@
-# Changes in [15.1.1](https://github.com/vnete/vnete-js/releases/tag/v15.1.1) (2021-11-22)
+# Changes in [15.2.1](https://github.com/vnete/vnete-js/releases/tag/v15.1.1) (2021-11-22)
+Changes in [15.2.1](https://github.com/matrix-org/matrix-js-sdk/releases/tag/v15.2.1) (2021-12-13)
+==================================================================================================
+
+ * Security release with updated version of Olm to fix https://matrix.org/blog/2021/12/03/pre-disclosure-upcoming-security-release-of-libolm-and-matrix-js-sdk
+
+Changes in [15.2.0](https://github.com/matrix-org/matrix-js-sdk/releases/tag/v15.2.0) (2021-12-06)
+==================================================================================================
+
+## ✨ Features
+ * Remove support for `ArrayBuffer` in unstable MSC3089 `createFile()` and `createNewVersion()` and instead use same content types as handled by `MatrixClient.uploadContent()`. This enables support for Node.js. ([\#2014](https://github.com/matrix-org/matrix-js-sdk/pull/2014)).
+ * Support for password-based backup on Node.js ([\#2021](https://github.com/matrix-org/matrix-js-sdk/pull/2021)).
+ * Add optional force parameter when ensuring Olm sessions ([\#2027](https://github.com/matrix-org/matrix-js-sdk/pull/2027)).
+
+## 🐛 Bug Fixes
+ * Fix call upgrades ([\#2024](https://github.com/matrix-org/matrix-js-sdk/pull/2024)). Contributed by @SimonBrandner.
+
+Changes in [15.2.0-rc.1](https://github.com/matrix-org/matrix-js-sdk/releases/tag/v15.2.0-rc.1) (2021-11-30)
+============================================================================================================
+
+## ✨ Features
+ * Remove support for `ArrayBuffer` in unstable MSC3089 `createFile()` and `createNewVersion()` and instead use same content types as handled by `MatrixClient.uploadContent()`. This enables support for Node.js. ([\#2014](https://github.com/matrix-org/matrix-js-sdk/pull/2014)).
+ * Support for password-based backup on Node.js ([\#2021](https://github.com/matrix-org/matrix-js-sdk/pull/2021)).
+ * Add optional force parameter when ensuring Olm sessions ([\#2027](https://github.com/matrix-org/matrix-js-sdk/pull/2027)).
+
+## 🐛 Bug Fixes
+ * Fix call upgrades ([\#2024](https://github.com/matrix-org/matrix-js-sdk/pull/2024)). Contributed by @SimonBrandner.
+
+Changes in [15.1.1](https://github.com/matrix-org/matrix-js-sdk/releases/tag/v15.1.1) (2021-11-22)
+==================================================================================================
 
 ## 🐛 Bug Fixes
 
